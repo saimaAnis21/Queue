@@ -1,15 +1,22 @@
 
-# Start with your code from LinkedList challenge.
-
-
+require_relative 'LinkedList'
 
 class Queue
+  attr_accessor :list
+  
+    def initialize
+      @list = LinkedList.new
+    end
   def add(number)
     # your code here
+    @list.add(number)
   end
   
   def remove
     # your code here
+    
+      @list.remove(0)
+
   end
 end
 
